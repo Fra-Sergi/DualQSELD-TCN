@@ -149,11 +149,11 @@ class DualQuaternionLinear(Module):
         # See the autograd section for explanation of what happens here.
         if input.dim() == 3:
             T, N, C = input.size()
-            input  = input.view(T * N, C)
+            input  = input.reshape(T * N, C)
             output = dual_quaternion_linear(input=input, r_weight=self.r_weight, i_weight=self.i_weight, j_weight=self.j_weight, k_weight=self.k_weight, \
                 r_weight_2=self.r_weight_2, i_weight_2=self.i_weight_2, j_weight_2=self.j_weight_2, k_weight_2=self.k_weight_2, bias=self.bias)
             # output = QuaternionLinearFunction.apply(input, self.r_weight, self.i_weight, self.j_weight, self.k_weight, self.bias)
-            output = output.view(T, N, output.size(1))
+            output = output.reshape(T, N, output.size(1))
         elif input.dim() == 2:
             output = dual_quaternion_linear(input=input, r_weight=self.r_weight, i_weight=self.i_weight, j_weight=self.j_weight, k_weight=self.k_weight, \
                 r_weight_2=self.r_weight_2, i_weight_2=self.i_weight_2, j_weight_2=self.j_weight_2, k_weight_2=self.k_weight_2, bias=self.bias)

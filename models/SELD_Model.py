@@ -7,7 +7,7 @@ import os
 import numpy as np
 import utility_functions as uf
 from torchinfo import summary
-from models.dual_quaternion_layers.dual_quat_layers import * 
+from models.dual_quaternion_layers.dual_quat_layers import *
 from models.quaternion_layers.quaternion_layers import *
 import math
 
