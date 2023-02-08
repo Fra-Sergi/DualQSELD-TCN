@@ -308,9 +308,9 @@ if __name__ == '__main__':
     #i/o
     parser.add_argument('--task', type=int,
                         help='task to be pre-processed')
-    parser.add_argument('--input_path', type=str, default='/var/datasets/L3DAS21/',
+    parser.add_argument('--input_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/',
                         help='directory where the dataset has been downloaded')
-    parser.add_argument('--output_path', type=str, default='/var/datasets/L3DAS21/processed',
+    parser.add_argument('--output_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed',
                         help='where to save the numpy matrices')
     #processing type
     parser.add_argument('--train_val_split', type=float, default=0.8,
