@@ -31,7 +31,7 @@
 --min_lr=0.000005
 --fixed_seed=True
 --batch_norm=BN
---batch_size=4
+--batch_size=3
 --gpu_id=0
 --training_predictors_path=./DATASETS/Task2/processed_2MicMagPhase_16Ch/task2_predictors_train.pkl
 --training_target_path=./DATASETS/Task2/processed_2MicMagPhase_16Ch/task2_target_train.pkl
