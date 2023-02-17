@@ -710,12 +710,12 @@ if __name__ == '__main__':
     parser.add_argument('--load_model', type=str, default=None,#'RESULTS/Task2/checkpoint',
                         help='Reload a previously trained model (whole task model)')
     #dataset parameters
-    parser.add_argument('--training_predictors_path', type=str,default='/var/datasets/L3DAS21/processed/task2_predictors_train.pkl')
-    parser.add_argument('--training_target_path', type=str,default='/var/datasets/L3DAS21/processed/task2_target_train.pkl')
-    parser.add_argument('--validation_predictors_path', type=str, default='/var/datasets/L3DAS21/processed/task2_predictors_validation.pkl')
-    parser.add_argument('--validation_target_path', type=str, default='/var/datasets/L3DAS21/processed/task2_target_validation.pkl')
-    parser.add_argument('--test_predictors_path', type=str, default='/var/datasets/L3DAS21/processed/task2_predictors_test.pkl')
-    parser.add_argument('--test_target_path', type=str, default='/var/datasets/L3DAS21/processed/task2_target_test.pkl')
+    parser.add_argument('--training_predictors_path', type=str,default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_predictors_train.pkl')
+    parser.add_argument('--training_target_path', type=str,default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_target_train.pkl')
+    parser.add_argument('--validation_predictors_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_predictors_validation.pkl')
+    parser.add_argument('--validation_target_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_target_validation.pkl')
+    parser.add_argument('--test_predictors_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_predictors_test.pkl')
+    parser.add_argument('--test_target_path', type=str, default='/content/gdrive/MyDrive/project_folder/var/datasets/L3DAS21/processed/task2_target_test.pkl')
     #training parameters
     parser.add_argument('--gpu_id', type=int, default=0)
     parser.add_argument('--use_cuda', type=str, default='True')
