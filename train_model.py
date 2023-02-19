@@ -740,7 +740,7 @@ if __name__ == '__main__':
     parser.add_argument('--phase', type=str, default='False')
     parser.add_argument('--class_overlaps', type=int, default=3,
                         help= 'max number of simultaneous sounds of the same class')
-    parser.add_argument('--time_dim', type=int, default=4800)
+    parser.add_argument('--time_dim', type=int, default=2400)
     parser.add_argument('--freq_dim', type=int, default=256)
     parser.add_argument('--output_classes', type=int, default=14)
     parser.add_argument('--pool_size', type=str, default='[[8,2],[8,2],[2,2],[1,1]]')
